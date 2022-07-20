@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 57%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #e5eff5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.heading-2 {
+  font-size: 3.7rem;
+  color: #2ab2af;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+.heading-3 {
+  font-size: 2.2rem;
+  color: #e5eff5;
+  letter-spacing: 1.3px;
+  margin-bottom: 1.8rem; }
+  .heading-3--yellow {
+    color: #c0df34;
+    font-weight: 700;
+    margin-bottom: 1.5rem; }
+
+.container {
+  width: 60%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2rem 4rem rgba(152, 166, 189, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+  grid-template-rows: min-content min-content; }
+  @media only screen and (max-width: 50em) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      height: 80%;
+      width: 95%; } }
+
+.header {
+  grid-row: 1 / span 1;
+  grid-column: col-start 1 / col-end 2;
+  padding: 3.5rem 5rem; }
+  .header__text {
+    font-size: 1.7rem;
+    padding-right: 10rem;
+    line-height: 1.7;
+    color: #98a6bd; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      grid-row: 1 / span 1;
+      grid-column: 1/-1; } }
+
+.sign-up {
+  grid-column: col-start 1 / col-end 1;
+  background-color: #2ab2af;
+  padding: 5rem;
+  font-size: 1.5rem;
+  color: #e5eff5;
+  font-weight: 400; }
+  @media only screen and (max-width: 50em) {
+    .sign-up {
+      grid-row: 2 / span 1;
+      grid-column: 1/-1; } }
+  .sign-up__price {
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem; }
+    .sign-up__price span {
+      font-size: 1.4rem;
+      color: rgba(229, 239, 245, 0.9);
+      letter-spacing: 1.4px;
+      margin-left: 1rem; }
+  .sign-up__text {
+    letter-spacing: 1.6px;
+    margin-bottom: 2rem; }
+  .sign-up__btn:link, .sign-up__btn:visited {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #e5eff5;
+    background-color: #c0df34;
+    text-align: center;
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5rem;
+    box-shadow: 0 1rem 2rem rgba(152, 166, 189, 0.3); }
+
+.why {
+  grid-column: col-start 2 / col-end 2;
+  background-color: rgba(42, 178, 175, 0.85);
+  padding: 5rem;
+  font-size: 1.5rem;
+  color: #e5eff5;
+  font-weight: 400; }
+  @media only screen and (max-width: 50em) {
+    .why {
+      grid-row: 3 / span 1;
+      grid-column: 1/-1; } }
+  .why__list {
+    list-style: none; }
+    .why__list li {
+      color: rgba(229, 239, 245, 0.9);
+      margin: 0.5rem 0; }

@@ -1,0 +1,17 @@
+.header {
+  grid-row: 1 / span 1;
+  grid-column: col-start 1 / col-end 2;
+  padding: 3.5rem 5rem;
+
+  &__text {
+    font-size: 1.7rem;
+    padding-right: 10rem;
+    line-height: 1.7;
+    color: $color-neatral-grey-blue;
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-row: 1 / span 1;
+    grid-column: 1/-1;
+  }
+}

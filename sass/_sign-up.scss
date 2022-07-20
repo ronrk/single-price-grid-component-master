@@ -1,0 +1,52 @@
+.sign-up {
+  grid-column: col-start 1 / col-end 1;
+  background-color: $color-primary-cyan;
+  padding: 5rem;
+  font-size: 1.5rem;
+  color: $color-neatral-grey;
+  font-weight: 400;
+
+  @media only screen and (max-width: 50em) {
+    grid-row: 2 / span 1;
+    grid-column: 1/-1;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
+
+    span {
+      font-size: 1.4rem;
+      color: rgba($color-neatral-grey, 0.9);
+      letter-spacing: 1.4px;
+      margin-left: 1rem;
+    }
+  }
+
+  &__text {
+    letter-spacing: 1.6px;
+    margin-bottom: 2rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: $color-neatral-grey;
+      background-color: $color-primary-yellow;
+      text-align: center;
+      display: block;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 0;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 5rem;
+      box-shadow: 0 1rem 2rem rgba($color-neatral-grey-blue, 0.3);
+    }
+  }
+}
