@@ -74,6 +74,9 @@ body {
 .sign-up {
   grid-column: col-start 1 / col-end 1;
   background-color: #2ab2af;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 5rem;
   font-size: 1.5rem;
   color: #e5eff5;
@@ -103,13 +106,13 @@ body {
     background-color: #c0df34;
     text-align: center;
     display: block;
-    width: 85%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem 0;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 5rem;
+    margin-top: 2rem;
     box-shadow: 0 1rem 2rem rgba(152, 166, 189, 0.3); }
 
 .why {
